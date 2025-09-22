@@ -14,7 +14,7 @@ MODEL_PATH = os.path.join(os.path.dirname(__file__), "models", "unet_road_seg.pt
 
 # Image transform
 img_transform = transforms.Compose([
-    transforms.Resize((256, 256)),
+    transforms.Resize((512, 512)),
     transforms.ToTensor(),
     transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])
 ])

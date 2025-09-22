@@ -1,0 +1,8 @@
+flask
+werkzeug
+torch
+torchvision
+opencv-python
+numpy
+moviepy # optional: for any further video composition
+tqdm

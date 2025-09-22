@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask instance folder (contains config, database files, secrets)
+instance/
+
+# Environment variables / virtual environments
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Pytest cache
+.pytest_cache/
+.coverage
+.tox/
+.nox/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# Flask log files
+*.log
+
+# Database files (SQLite)
+*.db
+*.sqlite3
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node / Frontend dependencies (if using npm or yarn)
+node_modules/
+
+# Secret keys or config files
+config.py

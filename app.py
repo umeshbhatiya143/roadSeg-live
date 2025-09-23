@@ -15,12 +15,13 @@ CCTV_VIDEOS = [f"sample{i}.mp4" for i in range(1, 7)]
 def index():
     return render_template("index.html", cctv_videos=CCTV_VIDEOS)
 
-# MJPEG Streaming
+# WebM chunk streaming
 @app.route("/stream/<video_name>")
 def stream_video(video_name):
     video_path = os.path.join(app.config['UPLOAD_FOLDER'], video_name)
     return Response(stream_inference(video_path),
-                    mimetype='multipart/x-mixed-replace; boundary=frame')
+                    mimetype="multipart/x-mixed-replace; boundary=frame")
+
 
 # Upload video and return streaming URL
 @app.route("/upload", methods=["POST"])
